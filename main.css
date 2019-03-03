@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-.wrongAnswer, .correctAnswer {
+.wrongAnswer, .correctAnswer, .finalScoreGood, .finalScoreBad {
     max-width: 480px;
     padding-left: 10px;
     padding-right: 10px;
@@ -21,7 +21,7 @@ body {
     border: 1px solid grey;
 }
 
-.wrongGif, .correctGif {
+.wrongGif, .correctGif, .endScoreBad, .endScoreGood {
     width: 100%;
     height: auto;
 }
