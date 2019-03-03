@@ -10,3 +10,22 @@ body {
     margin-right: auto;
     text-align: center;
 }
+
+.wrongAnswer, .correctAnswer {
+    max-width: 480px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.wrongGif, .correctGif {
+    width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
