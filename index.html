@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width">
         <title>Foodie Fight Quiz</title>
         <meta name="description" content="Can you navigate your way through these popular food trends, and spot the fakes?">
-        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
@@ -22,12 +22,14 @@
 
         <!--Body of Start Screen-->
         <div>
-            <main role="main" class="startQuiz">
-                <h2 class="quizDescription">Can you guess which of these outrageous foods is not a current food trend?</h2>
-                <button role="button" class="startButton">START QUIZ</button>
+            <main role="main">
+                <div class="startQuiz">
+                    <h2 class="quizDescription">Can you guess which of these outrageous foods is not a current food trend?</h2>
+                    <button role="button" class="startButton">START QUIZ</button>
+                </div>
             </main>
         </div>
-        <div class="mainPageView">
+        <div class="feedbackScreen">
             <div class="createQuestion hidden"></div>
             <div class="correctAnswerScreen hidden"></div>
             <div class="wrongAnswerScreen hidden"></div>
