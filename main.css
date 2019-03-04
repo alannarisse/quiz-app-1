@@ -2,30 +2,63 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 480px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.wrongAnswer, .correctAnswer, .finalScoreGood, .finalScoreBad {
-    max-width: 480px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border: 1px solid grey;
-}
-
-.wrongGif, .correctGif, .endScoreBad, .endScoreGood {
-    width: 100%;
-    height: auto;
-}
-
 .hidden {
     display: none;
+}
+
+body {
+    background-image: url("images/foodie-quiz-background-2.png");
+    background-color: #E8F1F8;
+    background-size: 100%;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pageHeader, .startQuiz {
+    text-align: center;
+    max-width: 480px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bodyArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+button {
+    border: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #222F3F;
+    background-color: transparent;
+    font-size: 15px;
+    border: 2px solid #222F3F;
+    border-radius: 3px;
+}
+
+button:hover {
+    width: 355px;
+    height: 42px;
+}
+
+h1, h2, h3, p {
+    color: #222F3F;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 25px;
 }
