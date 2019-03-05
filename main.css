@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-.hidden {
-    display: none;
-}
-
 body {
     background-image: url("images/foodie-quiz-background-2.png");
     background-color: #E8F1F8;
@@ -28,7 +24,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 50px;
+}
+
+.scoreKeeper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
 }
 
 button {
@@ -36,7 +42,6 @@ button {
     padding: 0px;
     height: 40px;
     width: 350px;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     color: #222F3F;
@@ -44,11 +49,28 @@ button {
     font-size: 15px;
     border: 2px solid #222F3F;
     border-radius: 3px;
+    font-weight: bold;
 }
 
-button:hover {
+button:focus {
+    outline:0;
+}
+
+.startButton {
+    margin-top: 50px;
+}
+
+.startButton:hover {
     width: 355px;
     height: 42px;
+}
+
+fieldset {
+    text-align: center;
+    border: 1px solid #222F3F;
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h1, h2, h3, p {
@@ -60,5 +82,17 @@ h1 {
 }
 
 h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.questionHeadline {
     font-size: 25px;
 }

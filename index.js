@@ -174,24 +174,24 @@ function createQuestion () {
         return `<form>
             <fieldset>
                 <legend>
-                    <h3>${questionsAnswers[questionNumber].question}</h3>
+                    <h3 class="questionHeadline">${questionsAnswers[questionNumber].question}</h3>
                 </legend>
                 <label for="answerOne">
                     <input type="radio" id="answerOne" value="${questionsAnswers[questionNumber].answerOptions[0]}" name="answer" required>
                     <span>${questionsAnswers[questionNumber].answerOptions[0]}</span>
-                </label>
+                </label><br>
                 <label for="answerTwo">
                     <input type="radio" id="answerTwo" value="${questionsAnswers[questionNumber].answerOptions[1]}" name="answer" required>
                     <span>${questionsAnswers[questionNumber].answerOptions[1]}</span>
-                </label>
+                </label><br>
                 <label for="answerThree">
                     <input type="radio" id="answerThree" value="${questionsAnswers[questionNumber].answerOptions[2]}" name="answer" required>
                     <span>${questionsAnswers[questionNumber].answerOptions[2]}</span>
-                </label>
+                </label><br>
                 <label for="answerFour">
                     <input type="radio" id="answerFour" value="${questionsAnswers[questionNumber].answerOptions[3]}" name="answer" required>
                     <span>${questionsAnswers[questionNumber].answerOptions[3]}</span>
-                </label>
+                </label><br>
                 <button role="button" class="submitButton">SUBMIT</button>
             </fieldset>
         </form>`;
