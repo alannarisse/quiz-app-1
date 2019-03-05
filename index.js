@@ -279,7 +279,7 @@ function wrongAnswerVisible() {
 function answerChoice() {
     $('form').on('submit', function (event) {
         event.preventDefault();
-        let choice = $('input:checked');
+        let selected = $('input:checked');
         let answer = selected.val();
         let correctAnswer= `${questionsAnswers[questionNumber].correctAnswer}`;
 
@@ -323,24 +323,24 @@ function renderNextQuestion() {
 function renderFinalResults() {
     if (score >= 6) {
         $('.questionAnswerForm form').replaceWith(
-            `<div role="final score" class="finalScoreGood">
-                <img src="images/celebration.gif" class="endScoreGood" alt="Friends dancing">
+            `<div role="final score" class="finalScore">
+                <img src="images/celebration.gif" alt="Friends dancing">
                 <h3>GREAT JOB!</h3>
                 <p>Your results: ${score} out of 10.</p>
                 <p>You probably already know this, but you're quite the foodie.</p>
             </div>`
         );
-    } else if (score < 6) {
+    } else {
         $('.questionAnswerForm form').replaceWith(
-            `<div role="final score" class="finalScoreBad>
-                <img src="images/sad.gif" class="endScoreBad" alt="Boy putting head down on desk">
-                <h3>GREAT JOB!</h3>
+            `<div role="final score" class="finalScore">
+                <img src="images/sad.gif" alt="Boy puts head down on desk">
+                <h3>OH NO!</h3>
                 <p>Your results: ${score} out of 10.</p>
                 <p>Honestly, it's probably a good thing you haven't gotten caught up in these trends.</p>
             </div>`
         );
     }
-    $('.results').append(`<button role="button" class="restart">RESTART</button>`)
+    $('.finalScore').append(`<button role="button" class="restart">RESTART</button>`);
 }
 
 //Restart the quiz when button is clicked
