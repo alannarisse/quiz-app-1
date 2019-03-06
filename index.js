@@ -1,7 +1,7 @@
 // Questions and answers as an array of objects,
 const questionsAnswers = [
     {
-        question: "Pick the one you won't be able to order for breakfast this week.",
+        question: "Pick the pastry you won't be able to order for breakfast this week.",
         answerOptions: [
             "Mint and Kale Doughnut",
             "Spaghetti Doughnut",
@@ -30,7 +30,7 @@ const questionsAnswers = [
         correctFeedback: "Does the words 'sushi smoothie' make your hair stand on end too?",
         wrongImg: "images/egg-on-face.gif",
         wrongAlt: "Egg thrown on man's face",
-        wrongFeedback: "Technically you can make this in your own home if you really wanted to, but no restaurant in their right mind would serve you a sushi smoothie."
+        wrongFeedback: "Technically you can make sushi smoothies in your own home if you really wanted to, but no restaurant in their right mind would serve you one."
     },
     {
         question: "Choose the flavor you won't find on a hot day.",
@@ -172,29 +172,29 @@ let score = 0;
 function createQuestion () {
     if (questionNumber < questionsAnswers.length) {
         return `<form>
-            <fieldset>
-                <legend>
-                    <h3 class="questionHeadline">${questionsAnswers[questionNumber].question}</h3>
-                </legend>
-                <label for="answerOne">
-                    <input type="radio" id="answerOne" value="${questionsAnswers[questionNumber].answerOptions[0]}" name="answer" required>
-                    <span>${questionsAnswers[questionNumber].answerOptions[0]}</span>
-                </label><br>
-                <label for="answerTwo">
-                    <input type="radio" id="answerTwo" value="${questionsAnswers[questionNumber].answerOptions[1]}" name="answer" required>
-                    <span>${questionsAnswers[questionNumber].answerOptions[1]}</span>
-                </label><br>
-                <label for="answerThree">
-                    <input type="radio" id="answerThree" value="${questionsAnswers[questionNumber].answerOptions[2]}" name="answer" required>
-                    <span>${questionsAnswers[questionNumber].answerOptions[2]}</span>
-                </label><br>
-                <label for="answerFour">
-                    <input type="radio" id="answerFour" value="${questionsAnswers[questionNumber].answerOptions[3]}" name="answer" required>
-                    <span>${questionsAnswers[questionNumber].answerOptions[3]}</span>
-                </label><br>
-                <button role="button" class="submitButton">SUBMIT</button>
-            </fieldset>
-        </form>`;
+                <fieldset>
+                    <legend>
+                        <h3 class="questionHeadline">${questionsAnswers[questionNumber].question}</h3><br>
+                    </legend>
+                    <label for="answerOne">
+                        <input type="radio" id="answerOne" value="${questionsAnswers[questionNumber].answerOptions[0]}" name="answer" required>
+                        <span>${questionsAnswers[questionNumber].answerOptions[0]}</span>
+                    </label>
+                    <label for="answerTwo">
+                        <input type="radio" id="answerTwo" value="${questionsAnswers[questionNumber].answerOptions[1]}" name="answer" required>
+                        <span>${questionsAnswers[questionNumber].answerOptions[1]}</span>
+                    </label>
+                   <label for="answerThree">
+                        <input type="radio" id="answerThree" value="${questionsAnswers[questionNumber].answerOptions[2]}" name="answer" required>
+                        <span>${questionsAnswers[questionNumber].answerOptions[2]}</span>
+                    </label>
+                    <label for="answerFour">
+                        <input type="radio" id="answerFour" value="${questionsAnswers[questionNumber].answerOptions[3]}" name="answer" required>
+                        <span>${questionsAnswers[questionNumber].answerOptions[3]}</span>
+                    </label>
+                    <button role="button" class="submitButton">SUBMIT</button>
+                </fieldset>
+            </form>`;
     } else {
         renderFinalResults();
         restartQuiz();
@@ -204,18 +204,22 @@ function createQuestion () {
 
 //Create HTML for right answers
 function correctAnswer() {
-    return `<img src="${questionsAnswers[questionNumber].correctImg}" alt="${questionsAnswers[questionNumber].correctAlt}">
-        <h3>ORDER UP!</h3>
-        <p>${questionsAnswers[questionNumber].correctFeedback}</p>
-        <button role="button" class="nextButton">NEXT QUESTION</button>`;
+    return `<div class="css-rightAnswer">
+            <img src="${questionsAnswers[questionNumber].correctImg}" alt="${questionsAnswers[questionNumber].correctAlt}" class="answerGifs">
+            <h3>ORDER UP!</h3>
+            <p>${questionsAnswers[questionNumber].correctFeedback}</p>
+            <button role="button" class="nextButton">NEXT QUESTION</button>
+        </div>`;
 }
 
 //Create HTML for wrong answers
 function wrongAnswer() {
-    return `<img src="${questionsAnswers[questionNumber].wrongImg}" alt="${questionsAnswers[questionNumber].wrongAlt}">
-        <h3>OOP, YOU'VE GOT EGG ON YOUR FACE!</h3>
-        <p>${questionsAnswers[questionNumber].wrongFeedback}</p>
-        <button role="button" class="nextButton">NEXT QUESTION</button>`;
+    return `<div class="css-wrongAnswer">
+            <img src="${questionsAnswers[questionNumber].wrongImg}" alt="${questionsAnswers[questionNumber].wrongAlt}" class="answerGifs">
+            <h3>OOP, YOU'VE GOT EGG ON YOUR FACE!</h3>
+            <p>${questionsAnswers[questionNumber].wrongFeedback}</p>
+            <button role="button" class="nextButton">NEXT QUESTION</button>
+        </div>`;
 }
 
 //Function to update the score
@@ -324,19 +328,17 @@ function renderFinalResults() {
     if (score >= 6) {
         $('.questionAnswerForm form').replaceWith(
             `<div role="final score" class="finalScore">
-                <img src="images/celebration.gif" alt="Friends dancing">
+                <img src="images/celebration.gif" alt="Friends dancing" class="answerGifs">
                 <h3>GREAT JOB!</h3>
-                <p>Your results: ${score} out of 10.</p>
-                <p>You probably already know this, but you're quite the foodie.</p>
+                <p>Your results: <span class="style">${score}</span> out of <span class="style">10</span>.<br>You probably already know this, but you're quite the foodie.</p>
             </div>`
         );
     } else {
         $('.questionAnswerForm form').replaceWith(
             `<div role="final score" class="finalScore">
-                <img src="images/sad.gif" alt="Boy puts head down on desk">
+                <img src="images/sad.gif" alt="Boy puts head down on desk" class="answerGifs">
                 <h3>OH NO!</h3>
-                <p>Your results: ${score} out of 10.</p>
-                <p>Honestly, it's probably a good thing you haven't gotten caught up in these trends.</p>
+                <p>Your results: <span class="style">${score}</span> out of <span class="style">10</span>.<br>Honestly, it's probably a good thing you haven't gotten caught up in these trends.</p>
             </div>`
         );
     }

@@ -1,3 +1,4 @@
+/*All browser sizes*/
 * {
     box-sizing: border-box;
 }
@@ -25,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .scoreKeeper {
@@ -65,12 +67,25 @@ button:focus {
     height: 42px;
 }
 
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 fieldset {
+    display: flex;
     text-align: center;
-    border: 1px solid #222F3F;
+    border: 2px solid #222F3F;
+    border-radius: 3px;
     max-width: 480px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.submitButton {
+    background-color: #E8F1F8;
+    bottom: 10%;
+    left: 36.5%;
 }
 
 h1, h2, h3, p {
@@ -81,12 +96,17 @@ h1 {
     font-size: 45px;
 }
 
-h2 {
+h2, h3 {
     font-size: 25px;
+}
+
+h3 {
+    margin-bottom: 0px;
 }
 
 p {
     font-size: 20px;
+    margin-top: 10px;
 }
 
 label {
@@ -95,4 +115,49 @@ label {
 
 .questionHeadline {
     font-size: 25px;
+}
+
+.css-wrongAnswer {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.nextButton {
+    margin-top: 10px;
+}
+
+.css-rightAnswer {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.answerGifs {
+    width: 100%;
+}
+
+.finalScore {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.style {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+    .bodyArea {
+        margin-top: 25px;
+    }
 }
