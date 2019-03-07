@@ -223,12 +223,13 @@ label {
     p {
         font-size: 15px;
     }
-}
 
-@media only screen and (max-width: 360px) {
     button {
         width: 250px;
     }
+}
+
+@media only screen and (max-width: 360px) {
     
     .radio-land input {
         left: 5%;
