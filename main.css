@@ -229,7 +229,7 @@ label {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
     
     .radio-land input {
         left: 5%;
@@ -238,4 +238,8 @@ label {
     .radio-land .circle {
         left: 5%;
     } 
+
+    .bold {
+        font-weight: 700;
+    }
 }
