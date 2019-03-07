@@ -80,13 +80,49 @@ fieldset {
     max-width: 480px;
     margin-right: auto;
     margin-left: auto;
+    position: relative;
+    padding-bottom: 60px;
 }
 
 .submitButton {
     background-color: #E8F1F8;
-    bottom: 10%;
-    left: 36.5%;
+    bottom: -20px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
 }
+
+.radio-land {
+    position: relative;
+}
+
+.radio-land input {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+.radio-land .circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #E8F1F8;
+    border: 2px solid #222F3F;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+.radio-land .circle:hover {
+  background-color: #222F3F;
+}
+
+.radio-land input:checked + .circle {
+    background-color: #222F3F;
+  }
 
 h1, h2, h3, p {
     color: #222F3F;

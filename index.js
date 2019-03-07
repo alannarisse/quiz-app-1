@@ -176,21 +176,25 @@ function createQuestion () {
                     <legend>
                         <h3 class="questionHeadline">${questionsAnswers[questionNumber].question}</h3><br>
                     </legend>
-                    <label for="answerOne">
+                    <label for="answerOne" class="radio-land">
                         <input type="radio" id="answerOne" value="${questionsAnswers[questionNumber].answerOptions[0]}" name="answer" required>
                         <span>${questionsAnswers[questionNumber].answerOptions[0]}</span>
+                        <span class="circle"></span>
                     </label>
-                    <label for="answerTwo">
+                    <label for="answerTwo" class="radio-land">
                         <input type="radio" id="answerTwo" value="${questionsAnswers[questionNumber].answerOptions[1]}" name="answer" required>
                         <span>${questionsAnswers[questionNumber].answerOptions[1]}</span>
+                        <span class="circle"></span>
                     </label>
-                   <label for="answerThree">
+                   <label for="answerThree" class="radio-land">
                         <input type="radio" id="answerThree" value="${questionsAnswers[questionNumber].answerOptions[2]}" name="answer" required>
                         <span>${questionsAnswers[questionNumber].answerOptions[2]}</span>
+                        <span class="circle"></span>
                     </label>
-                    <label for="answerFour">
+                    <label for="answerFour" class="radio-land">
                         <input type="radio" id="answerFour" value="${questionsAnswers[questionNumber].answerOptions[3]}" name="answer" required>
                         <span>${questionsAnswers[questionNumber].answerOptions[3]}</span>
+                        <span class="circle"></span>
                     </label>
                     <button role="button" class="submitButton">SUBMIT</button>
                 </fieldset>
