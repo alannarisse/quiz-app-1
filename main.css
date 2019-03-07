@@ -98,13 +98,13 @@ fieldset {
 }
 
 .radio-land input {
-    display: inline-block;
     width: 18px;
     height: 18px;
     position: absolute;
     left: 20%;
     top: 0;
 }
+
 .radio-land .circle {
     display: inline-block;
     width: 20px;
@@ -116,13 +116,14 @@ fieldset {
     left: 20%;
     top: 0;
 }
+
 .radio-land .circle:hover {
-  background-color: #222F3F;
-}
+    background-color: #222F3F;
+  }
 
 .radio-land input:checked + .circle {
     background-color: #222F3F;
-  }
+}
 
 h1, h2, h3, p {
     color: #222F3F;
@@ -192,8 +193,47 @@ label {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 475px) {
     .bodyArea {
         margin-top: 25px;
+        margin-bottom: 25px;
     }
+    
+    .radio-land input {
+        left: 10%;
+    }
+    
+    .radio-land .circle {
+        left: 10%;
+    } 
+
+    .pageHeader, .startQuiz {
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    button {
+        width: 250px;
+    }
+    
+    .radio-land input {
+        left: 5%;
+    }
+    
+    .radio-land .circle {
+        left: 5%;
+    } 
 }

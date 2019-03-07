@@ -1,7 +1,7 @@
 // Questions and answers as an array of objects,
 const questionsAnswers = [
     {
-        question: "Pick the pastry you won't be able to order for breakfast this week.",
+        question: "Can you spot the pastry that somehow isn't a trendy foodie fave?",
         answerOptions: [
             "Mint and Kale Doughnut",
             "Spaghetti Doughnut",
@@ -9,11 +9,11 @@ const questionsAnswers = [
             "Chili Doughnut"
         ],
         correctAnswer: "Mint and Kale Doughnut",
-        correctImg: "images/monica-trifle.gif", 
-        correctAlt: "Woman pretends to enjoy her trifle",
-        correctFeedback: "We're a little relieved that one isn't real. Vegetables do not belong in doughnuts.",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        correctImg: "images/doughnuts.gif", 
+        correctAlt: "Doughnut slowly being eaten",
+        correctFeedback: "We're a little relieved mint and kale doughnuts aren't a thing (yet). Vegetables do not belong in this sweet treat.",
+        wrongImg: "images/doughnuts.gif",
+        wrongAlt: "Doughnut slowly being eaten",
         wrongFeedback: "The right answer was mint and kale doughnuts. Unfortunately your favorite super food and breaksfast pastry haven't been combined quite yet."
     },
     {
@@ -25,15 +25,15 @@ const questionsAnswers = [
             "Sushi Bread"
         ],
         correctAnswer: "Sushi Smoothie",
-        correctImg: "images/patrick-star.gif", 
-        correctAlt: "Patrick enjoys his dinner",
+        correctImg: "images/sushi.gif", 
+        correctAlt: "Dancing sushi roll",
         correctFeedback: "Does the words 'sushi smoothie' make your hair stand on end too?",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        wrongImg: "images/sushi.gif",
+        wrongAlt: "Dancing sushi roll",
         wrongFeedback: "Technically you can make sushi smoothies in your own home if you really wanted to, but no restaurant in their right mind would serve you one."
     },
     {
-        question: "Choose the flavor you won't find on a hot day.",
+        question: "Choose the ice cream flavor you won't find on a hot day.",
         answerOptions: [
             "Ham Ice Cream",
             "Mayonnaise Ice Cream",
@@ -41,11 +41,11 @@ const questionsAnswers = [
             "Sriracha Ice Cream"
         ],
         correctAnswer: "Sauerkraut Ice Cream",
-        correctImg: "images/pooh-bear.gif",
-        correctAlt: "Pooh sits down to enjoy his dinner",
+        correctImg: "images/icecream.gif",
+        correctAlt: "Skateboarding ice cream cone",
         correctFeedback: "Honestly, none of these sound all that refreshing, but pickled cabbage needs to stay far far away from our favorite summer treats.",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        wrongImg: "images/icecream.gif",
+        wrongAlt: "Skateboarding ice cream cone",
         wrongFeedback: "Sauerkraut ice cream is the correct answer, though someone needs to stop whoever is making these other flavors too."
     },
     {
@@ -57,11 +57,11 @@ const questionsAnswers = [
             "Glitter latte"
         ],
         correctAnswer: "Hot Sauce Cappuccino",
-        correctImg: "images/monica-trifle.gif", 
-        correctAlt: "Woman pretends to enjoy her trifle",
+        correctImg: "images/coffee.gif", 
+        correctAlt: "Smiling coffee cup adds cream",
         correctFeedback: "Though not a real thing yet, a hot sauce cappuccino or mocha doesn't sound so bad...",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        wrongImg: "images/coffee.gif",
+        wrongAlt: "Smiling coffee cup adds cream",
         wrongFeedback: "You might not be able to find a hot sauce cappuccino yet, but you can always add a few dabs to make your own."
     },
     {
@@ -73,12 +73,12 @@ const questionsAnswers = [
             "Mustard Pizza"
         ],
         correctAnswer: "Grape Pizza",
-        correctImg: "images/patrick-star.gif", 
-        correctAlt: "Patrick enjoys his dinner",
+        correctImg: "images/pizza.gif", 
+        correctAlt: "A slice of pepperoni pizza removes its pepperoni sunglasses",
         correctFeedback: "By the time it's done cooking, wouldn't the grapes just be raisins? And who wants raisins on their pizza?",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
-        wrongFeedback: "Though not the most unappetizing of all the options, grape pizza is the correct answer."
+        wrongImg: "images/pizza.gif",
+        wrongAlt: "A slice of pepperoni pizza removes its pepperoni sunglasses",
+        wrongFeedback: "Grape pizza is the correct answer, though not the most unappetizing of all the options."
     },
     {
         question: "What's one way you can't enjoy ramen, at least not yet?",
@@ -86,14 +86,14 @@ const questionsAnswers = [
             "Ramen Burger",
             "Ramen Cocktail",
             "Beer Ramen",
-            "Pringles-Flavored Instant Ramen"
+            "Pringles Instant Ramen"
         ],
         correctAnswer: "Ramen Cocktail",
-        correctImg: "images/pooh-bear.gif",
-        correctAlt: "Pooh sits down to enjoy his dinner",
+        correctImg: "images/ramen.gif",
+        correctAlt: "Bowl of ramen",
         correctFeedback: "There's no bad way to enjoy ramen, but as of yet you can't order a ramen cocktail.",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        wrongImg: "images/ramen.gif",
+        wrongAlt: "bowl of ramen",
         wrongFeedback: "There's no bad way to enjoy ramen, but as of yet you can't order a ramen cocktail."
     },
     {
@@ -105,11 +105,11 @@ const questionsAnswers = [
             "CBD Chocolate Milk"
         ],
         correctAnswer: "THC Salad",
-        correctImg: "images/monica-trifle.gif", 
-        correctAlt: "Woman pretends to enjoy her trifle",
+        correctImg: "images/weed.gif", 
+        correctAlt: "Dancing pot leaf",
         correctFeedback: "I mean you COULD do this, but it wouldn't give you the effect you're looking for.",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        wrongImg: "images/weed.gif",
+        wrongAlt: "Dancing pot leaf",
         wrongFeedback: "Sorry vegans, but THC salads are not on the menu yet."
     },
     {
@@ -117,31 +117,31 @@ const questionsAnswers = [
         answerOptions: [
             "Red Hot Chips Ahoy",
             "Wasabi Oreos",
-            "Peanut Butter and Jelly Cookies",
+            "PB&J Cookies",
             "S'mores Cookies"
         ],
         correctAnswer: "Red Hot Chips Ahoy",
-        correctImg: "images/patrick-star.gif", 
-        correctAlt: "Patrick enjoys his dinner",
+        correctImg: "images/cookies.gif", 
+        correctAlt: "Cat eating cookies",
         correctFeedback: "This candy cookie combo might not be real, but part of me thinks it needs to be.",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        wrongImg: "images/cookies.gif",
+        wrongAlt: "Cat eating cookies",
         wrongFeedback: "Red Hot Chips Ahoy is one brand partnership that isn't off the ground quite yet. "
     },
     {
         question: "Which of these snacks is not for sale in stores?",
         answerOptions: [
             "Pickle Popcorn",
-            "Grilled Cheese and Ketchup Chips",
+            "Grilled Cheese Chips",
             "Blue Cheese Chips",
-            "Butter Garlic Scallop Chips"
+            "Garlic Scallop Chips"
         ],
         correctAnswer: "Blue Cheese Chips",
-        correctImg: "images/pooh-bear.gif",
-        correctAlt: "Pooh sits down to enjoy his dinner",
+        correctImg: "images/chips.gif",
+        correctAlt: "Dancing tortilla chips",
         correctFeedback: "No matter how much you might love cheese, we hope we never see this chip flavor on the shelves.",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        wrongImg: "images/chips.gif",
+        wrongAlt: "Dancing tortilla chips",
         wrongFeedback: "It might seem like fish does not belong as a chip flavor, but neither does blue cheese. Thankfully we can still spare ourselves from the latter. "
     },
     {
@@ -153,11 +153,11 @@ const questionsAnswers = [
             "Bed Pan Platter"
         ],
         correctAnswer: "Bed Pan Platter",
-        correctImg: "images/monica-trifle.gif", 
-        correctAlt: "Woman pretends to enjoy her trifle",
+        correctImg: "images/serving.gif", 
+        correctAlt: "Bacon serving a plate full of breakfast",
         correctFeedback: "Sometiems restaurants need to be stopped. I know I for one do not want to eat my food off anything but a plate. ",
-        wrongImg: "images/egg-on-face.gif",
-        wrongAlt: "Egg thrown on man's face",
+        wrongImg: "images/serving.gif",
+        wrongAlt: "Bacon serving a plate full of breakfast",
         wrongFeedback: "If my food was ever served in a bed pan, I think I'd die of shock. And, I'd be okay with that. "
     }
 ];
@@ -173,31 +173,31 @@ function createQuestion () {
     if (questionNumber < questionsAnswers.length) {
         return `<form>
                 <fieldset>
-                    <legend>
-                        <h3 class="questionHeadline">${questionsAnswers[questionNumber].question}</h3><br>
-                    </legend>
-                    <label for="answerOne" class="radio-land">
-                        <input type="radio" id="answerOne" value="${questionsAnswers[questionNumber].answerOptions[0]}" name="answer" required>
-                        <span>${questionsAnswers[questionNumber].answerOptions[0]}</span>
-                        <span class="circle"></span>
-                    </label>
-                    <label for="answerTwo" class="radio-land">
-                        <input type="radio" id="answerTwo" value="${questionsAnswers[questionNumber].answerOptions[1]}" name="answer" required>
-                        <span>${questionsAnswers[questionNumber].answerOptions[1]}</span>
-                        <span class="circle"></span>
-                    </label>
-                   <label for="answerThree" class="radio-land">
-                        <input type="radio" id="answerThree" value="${questionsAnswers[questionNumber].answerOptions[2]}" name="answer" required>
-                        <span>${questionsAnswers[questionNumber].answerOptions[2]}</span>
-                        <span class="circle"></span>
-                    </label>
-                    <label for="answerFour" class="radio-land">
-                        <input type="radio" id="answerFour" value="${questionsAnswers[questionNumber].answerOptions[3]}" name="answer" required>
-                        <span>${questionsAnswers[questionNumber].answerOptions[3]}</span>
-                        <span class="circle"></span>
-                    </label>
-                    <button role="button" class="submitButton">SUBMIT</button>
-                </fieldset>
+                <legend>
+                    <h3 class="questionHeadline">${questionsAnswers[questionNumber].question}</h3><br>
+                </legend>
+                <label for="answerOne" class="radio-land">
+                    <input type="radio" id="answerOne" value="${questionsAnswers[questionNumber].answerOptions[0]}" name="answer" required>
+                    <span class="circle"></span>
+                    <span>${questionsAnswers[questionNumber].answerOptions[0]}</span>
+                </label>
+                <label for="answerTwo" class="radio-land">
+                    <input type="radio" id="answerTwo" value="${questionsAnswers[questionNumber].answerOptions[1]}" name="answer" required>
+                    <span class="circle"></span>
+                    <span>${questionsAnswers[questionNumber].answerOptions[1]}</span>
+                </label>
+                <label for="answerThree" class="radio-land">
+                    <input type="radio" id="answerThree" value="${questionsAnswers[questionNumber].answerOptions[2]}" name="answer" required>
+                    <span class="circle"></span>
+                    <span>${questionsAnswers[questionNumber].answerOptions[2]}</span>
+                </label>
+                <label for="answerFour" class="radio-land">
+                    <input type="radio" id="answerFour" value="${questionsAnswers[questionNumber].answerOptions[3]}" name="answer" required>
+                    <span class="circle"></span>
+                    <span>${questionsAnswers[questionNumber].answerOptions[3]}</span>
+                </label>
+                <button role="button" class="submitButton">SUBMIT</button>
+            </fieldset>
             </form>`;
     } else {
         renderFinalResults();
@@ -210,7 +210,7 @@ function createQuestion () {
 function correctAnswer() {
     return `<div class="css-rightAnswer">
             <img src="${questionsAnswers[questionNumber].correctImg}" alt="${questionsAnswers[questionNumber].correctAlt}" class="answerGifs">
-            <h3>ORDER UP!</h3>
+            <h3>YUP!</h3>
             <p>${questionsAnswers[questionNumber].correctFeedback}</p>
             <button role="button" class="nextButton">NEXT QUESTION</button>
         </div>`;
@@ -220,7 +220,7 @@ function correctAnswer() {
 function wrongAnswer() {
     return `<div class="css-wrongAnswer">
             <img src="${questionsAnswers[questionNumber].wrongImg}" alt="${questionsAnswers[questionNumber].wrongAlt}" class="answerGifs">
-            <h3>OOP, YOU'VE GOT EGG ON YOUR FACE!</h3>
+            <h3>NOPE!</h3>
             <p>${questionsAnswers[questionNumber].wrongFeedback}</p>
             <button role="button" class="nextButton">NEXT QUESTION</button>
         </div>`;
