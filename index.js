@@ -155,7 +155,7 @@ const questionsAnswers = [
         correctAnswer: "Bed Pan Platter",
         correctImg: "images/serving.gif", 
         correctAlt: "Bacon serving a plate full of breakfast",
-        correctFeedback: "Sometiems restaurants need to be stopped. I know I for one do not want to eat my food off anything but a plate. ",
+        correctFeedback: "Sometimes restaurants need to be stopped. I know I for one do not want to eat my food off anything but a plate. ",
         wrongImg: "images/serving.gif",
         wrongAlt: "Bacon serving a plate full of breakfast",
         wrongFeedback: "If my food was ever served in a bed pan, I think I'd die of shock. And, I'd be okay with that. "
